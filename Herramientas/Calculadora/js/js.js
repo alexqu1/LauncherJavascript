@@ -1,4 +1,4 @@
-valor="25.5+ 0.75";
+
 
 document.write(eval(valor));
 
