@@ -1,0 +1,114 @@
+*{margin: 0px; padding: 0px;}
+
+
+body {
+
+    background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+ .delante{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: hsl(349, 71%, 52%);
+  border-radius: 20px 20px 20px 20px;
+    width:500px;
+    height: 700px;
+    
+    -webkit-box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+-moz-box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+
+}
+
+.delante:hover{
+  
+    -webkit-box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+    -moz-box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+    box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+}
+
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 2em;
+    height: 500px;
+    width: 90%;
+    border-radius: 100%;
+    
+}
+
+.circulo img{
+    width: 80%;
+}
+
+
+
+.detras{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: turquoise;
+  border-radius: 20px 20px 20px 20px;
+  width:500px;
+    height: 700px;
+    -webkit-box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+    -moz-box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+    box-shadow: inset -3px 7px 50px 14px rgba(252,252,255,1);
+    transition: 1s;
+}
+
+.detras:hover{
+    -webkit-box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+    -moz-box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+    box-shadow:  -3px 7px 50px 14px rgba(252,252,255,1);
+ 
+}
+
+@media (max-width:599px){
+    /* movil */
+    .contenedor{
+        margin-top:27em ;
+        flex-direction: column;
+    }
+ 
+    .detras{
+        margin-top: 10em;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width:600px) and  (max-width:1099px){
+    /* tablet*/
+    .contenedor{
+        margin-top: 12em;
+        flex-direction: column;
+    }
+   
+    .detras{
+        margin-top: 10em;
+        
+    }
+}

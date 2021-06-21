@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Boxeo</title>
+    <link rel="icon" type="image/png" href="img/Ticono.png" />
+</head>
+<body>
+  
+
+<header>
+   <p> Jugador1 <img src="img/cruz.png" alt="" srcset=""> </p>
+   <p> Jugador2 <img src="img/circulo.png" alt="" srcset=""> </p>
+
+</header>
+<div class="elegir">
+<p>Elige que jugador empieza:</p>
+<div class="ElegirJugador">
+<button class="btn-grad3" onclick="CambiarJugador(1)"> Jugador1  </button>
+<button class="btn-grad2" onclick="CambiarJugador(2)"> Jugador2  </button>
+</div>
+</div>
+    <div id="contenedor">
+       <div>
+        <div id="cuadro1" onclick="Pintarimg(1)" ></div>
+        <div id="cuadro2" onclick="Pintarimg(2)"></div>
+        <div id="cuadro3" onclick="Pintarimg(3)"></div>
+    </div>
+    <div>
+        <div id="cuadro4" onclick="Pintarimg(4)"></div>
+        <div id="cuadro5" onclick="Pintarimg(5)"></div>
+        <div id="cuadro6" onclick="Pintarimg(6)"></div>
+      </div>
+      <div>  
+        <div id="cuadro7" onclick="Pintarimg(7)"></div>
+        <div id="cuadro8" onclick="Pintarimg(8)"></div>
+        <div id="cuadro9" onclick="Pintarimg(9)"></div>
+        </div>
+
+    </div>
+  <div class="boton">
+  <button onclick="reiniciar()" class="btn-grad">reiniciar</button>
+</div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="js/js.js"></script>
+
+
+
+
+
+</html>

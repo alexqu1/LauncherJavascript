@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Boxeo</title>
+    <link rel="icon" type="image/png" href="img/iconoGuantes.png" />
+</head>
+<body>
+  
+    <div id="contenedor">
+        <header>
+        <div id="jugador1"></div>
+        <div id="jugador2"></div>
+    </header>
+        <div class="status" data-aos="fade-down" data-aos-duration="1500"  data-aos-easing="linear">
+
+            <img class="guanteRojopequeño" src="img/guanteRojo.png" alt="" srcset="">
+        
+            <div class="izq"> <div id="vidap1"></div> </div>
+
+         <div class="time">  <span id="minutes"></span> :   <span id="seconds"></span> </div> 
+            <div class="der"><div id="vidap2"></div>  </div>
+            <img class="guanteAzulpequeño" src="img/guanteAzul.png" alt="" srcset="">
+
+        </div>
+        <div class="cajacentro">  
+            
+            <img class="izqgif" id="caracterp1" src="img/stickIzq.gif" data-aos="fade-right"  data-aos-easing="linear"    alt="" srcset="">
+            <img class="izqgif" id="caracterp2"  src="img/stickder.gif" data-aos="fade-right"  data-aos-easing="linear"    alt="" srcset="">
+         
+            <img id="guanteAzul" src="img/guanteAzul.png"  alt="" srcset="">
+            <img id="guanteRojo" src="img/guanteRojo.png" alt="" srcset="">
+
+        </div>
+        
+        <footer>
+            <button class="ComoJugar" onclick="AbrirControles()">Como Jugar</button>
+            <div class="controles">Jugador1(izquierda) Ataca con la <b>(A)</b> - Defiende con la <b>(S)</b></div>
+            <div class="controles">Jugador2(derecha) Ataca con la <b>(J)</b> - Defiende con la <b>(K)</b></div>
+            <div class="controles">Ataque quita 5 de vida si bloqueas el golpe quitara 0 de vida pero solo puedes bloquear 2 veces a la 3 quitara 5 vida para volver a bloquear deberas quitar la defensa y volver a poner la defensa </div>
+        </footer>
+ 
+    </div>
+  
+
+
+
+
+
+
+
+    <div id="mymodal">
+        <div id="cajaModal">
+            <span class="cerrar" onclick="CerrarModal()">X</span>
+          
+            
+        <div>
+            <p class="">Jugador1 <img  class="guanteRojopequeño" src="img/guanteRojo.png" alt="" srcset=""></p>
+            <input type="text" id="inputTitulo" placeholder="Nombre Jugador1" value="">
+     
+        </div>
+        <div>
+            <!-- <input type="file" id="personajep1" name="archivosubido"> -->
+        </div>
+
+        <div>
+            <p>Jugador2 <img  class="guanteAzulpequeño" src="img/guanteAzul.png" alt="" srcset=""></p>
+            <input type="text" id="inputDescrip" placeholder="Nombre Jugador2" value="">
+        </div>
+        <div>
+            <!-- <input type="file" id="personajep2" name="archivosubido" > -->
+        </div>
+    
+            <button   class="jugar" id="botonGuardar" onclick="jugar()" >Jugar</button>
+
+        </div>
+    </div>
+
+    <div id="mymodalGanar">
+        <div id="cajaModalGanar">
+        
+          
+        <div id="ganador">
+         
+        </div>
+
+        <div id="guanteGanador">
+
+        </div>
+            <button  class="jugar" id="botonGuardar" onclick="jugar()" >Jugar</button>
+
+        </div>
+    </div>
+
+
+    <audio src=""></audio>
+ 
+  
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="js/js.js"></script>
+
+
+
+
+
+</html>

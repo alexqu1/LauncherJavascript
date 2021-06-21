@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    margin: 0px;
+}
+
+
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5em;
+}
+
+.elegir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ElegirJugador{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.ElegirJugador img{
+    width: 15%;
+}
+header p{
+ font-size: 22px;
+}
+
+header  img{
+    width: 5%;
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15em ;
+}
+
+
+#cuadro1 , #cuadro2 , #cuadro3 ,#cuadro4 ,#cuadro5 , #cuadro6 , #cuadro7 , #cuadro8 ,  #cuadro9 {
+    height: 60px;
+    width: 60px;
+    padding: 0.5em;
+}
+
+#cuadro1{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#cuadro1 img{
+        width: 100%;
+}
+
+#cuadro2{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#cuadro2 img{
+    width: 100%;
+}
+
+#cuadro3{
+
+    border-right: 1px solid black;
+}
+
+#cuadro3 img{
+    width: 100%;
+}
+#cuadro4{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#cuadro4 img{
+    width: 100%;
+}
+
+#cuadro5{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#cuadro5 img{
+    width: 100%;
+}
+
+
+#cuadro6{
+
+    border-right: 1px solid black;
+}
+
+#cuadro6 img{
+    width: 100%;
+}
+
+
+
+#cuadro7{
+    border-bottom: 1px solid black;
+}
+
+#cuadro7 img{
+    width: 100%;
+}
+
+#cuadro8{
+    border-bottom: 1px solid black;
+  
+}
+
+#cuadro8 img{
+    width: 100%;
+}
+#cuadro9{   
+}
+
+#cuadro9 img{
+    width: 100%;
+}
+
+/* boton */
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #0099F7 0%, #F11712  51%, #0099F7  100%)}
+.btn-grad {
+
+   margin-top: 10em;
+  
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ 
+ .btn-grad2 {background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%)}
+ .btn-grad2 {
+    margin: 10px;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+
+  }
+
+  .btn-grad2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+  
+  .btn-grad3 {background-image: linear-gradient(to right, #56CCF2 0%, #2F80ED  51%, #56CCF2  100%)}
+  .btn-grad3 {
+     margin: 10px;
+    padding: 1em;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+    
+   }
+
+   .btn-grad3:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
