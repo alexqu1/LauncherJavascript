@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Launcher</title>
+</head>
+<body>
+    
+    <section id="uno">
+        <div class="contenedor">
+            <h2>Juegos</h2>
+            <div class="juegos">
+            
+            <a href="Juegos/tragaperras/index.html">  <div class="caja"><img src="img/tragaperras.png" alt=""> </div></a>  
+             <a href="Juegos/Piedra_Papel_Tijera/index.html">   <div class="caja"><img src="img/piedra-papel-tijeras.png" alt=""></div></a>  
+            <a href="Juegos/boxeo/index.html">  <div class="caja"><img src="img/guanteRojo.png" alt=""> </div></a>  
+           
+            <a href="Juegos/3raya/index.html">  <div class="caja"><img src="img/Ticono.png" alt=""> </div></a>  
+
+
+
+          
+
+        </div>
+        <h2>Herramientas</h2>
+        <div class="herramientas">
+            
+         <a href="Herramientas/Pomodoro/index.html"> <div class="caja"> <img src="img/cronometro.png" alt=""> </div></a>  
+         <a href="Herramientas/calculadora/index.html">    <div class="caja"><img src="img/calculadora.png" alt=""></div></a>
+         <a href="Herramientas/Notas/index.html">    <div class="caja"><img src="img/notas.png" alt=""></div></a>
+        </div>
+    </div>
+    </section>
+
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".caja"), {
+            max: 25,
+            speed: 400,
+            glare:true,
+            "max-glare":1,
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".caja"));
+    </script>
+
+
+
+</body>
+
+</html>

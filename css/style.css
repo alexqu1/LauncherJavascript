@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+}
+
+#uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background:url(../img/img3.jpg); */
+    /* background:rgba(214, 205, 205, 0.2); */
+
+}
+
+.contenedor{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    /* background-color:rgba(255, 255, 255, 0.5); */
+    background: url(../img/img4.jpg)no-repeat;
+    background-size: cover;
+    
+    border-radius: 30px;
+}
+
+h2{
+    font-size: 45px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.juegos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.juegos a{
+  
+    padding: 1px;
+    width: 8%;
+   
+}
+
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px ;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border:3px solid white;
+   background-color:rgba(255, 255, 255, 0.5);
+}
+
+.caja:hover{
+  
+   
+    /* padding: 15px;
+
+    /* background-color:rgba(255, 255, 255, 0.3); */
+   /* transition: ease-in 0.7s;  */ 
+}
+
+.herramientas a{
+    width: 10%;
+  
+}
+
+.herramientas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.contenedor img {
+    width: 100%;
+}
