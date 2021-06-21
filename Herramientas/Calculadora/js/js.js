@@ -1,6 +1,5 @@
 
 
-document.write(eval(valor));
 
 function operacion(parametro) {
 
