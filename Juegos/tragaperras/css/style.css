@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #333;
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+}
+
+/* moneda */
+.cajaMoneda{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.cajaMoneda h2{
+  margin-left: 3em;
+}
+
+#moneda{
+    width: 20%;
+}
+
+.moneda{
+    width: 12%;
+    margin-left: 5px;
+}
+
+.imgInsertar{
+    width: 20%;
+    margin-left:25em;
+    
+}
+
+
+.imgInsertar img{
+    width: 30%;
+    margin-left: 12em;
+}
+/* maquina */
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja{
+    width: 13%;
+    padding: 1em;
+    border-radius: 10px ;
+    height: 180px;
+    background-color: aliceblue;
+   overflow: hidden;
+    margin-right:1em ;
+}
+.caja img{
+    width: 100%;
+    
+}
+
+#alerta{
+    font-size: 30px;
+    margin-left: 16em;
+    margin-bottom: 1em;
+}
+
+.ganador{
+    text-shadow: aqua;
+
+}
+
+/* parte tirar */
+.cajaTirar{
+
+    text-align: center;
+
+}
+.botonTirar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-right: 4px solid rgb(173, 165, 165);
+    border-bottom: 7px solid gray;
+    margin-top: 2em;
+    margin-left: 16.5em;
+    border-radius:100%;
+    height: 200px;
+    background-image: linear-gradient(320deg , rgb(19, 34, 87), rgb(98,135, 197));
+    width: 20%;
+ 
+    
+}
+
+.botonTirar:active{
+    width:19%;
+    height: 190px;
+}
+
+
+
+@media (max-width:599px){
+
+    /* moneda */
+
+
+    .cajaMoneda{
+        flex-direction: column;
+      
+        margin:0px;
+    
+    }
+
+
+    .imgInsertar{
+        width: 40%;
+        margin:0px;
+        
+    }
+
+    .moneda{
+       display: none;
+    }
+    
+
+    #alerta{
+        font-size: 30px;
+        margin-left: 2.3em;
+        margin-bottom: 1em;
+    }
+
+    /* maquina */
+
+
+    .caja{
+        margin-left: 1em;
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-radius: 10px ;
+    }
+
+    .caja img{
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    .botonTirar:active{
+        width:40%;
+        height: 180px;
+    }
+    
+
+/* parte tirar */
+    .botonTirar{
+        width: 50%;
+        margin-left: 3.2em;
+    }
+
+}
