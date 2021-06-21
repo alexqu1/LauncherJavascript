@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="calculadora">
+               <div class="resultado">
+                   <input type="text" id="resul" class="text">
+               </div>
+               <div class="numeros">
+                <div class="caja negro" onclick="operacion('ac')">AC</div>
+                <div class="caja negro">+/</div>
+                <div class="caja negro">%</div>
+                <div class="caja naranja" onclick="operacion('/')">/</div>
+                <div class="caja gris" onclick="operacion(7)">7</div>
+                <div class="caja gris" onclick="operacion(8)">8</div>
+                <div class="caja gris" onclick="operacion(9)">9</div>
+                <div class="caja naranja" onclick="operacion('*')" >x</div>
+                <div class="caja gris" onclick="operacion(4)" >4</div>
+                <div class="caja gris" onclick="operacion(5)">5</div>
+                <div class="caja gris" onclick="operacion(6)">6</div>
+                <div class="caja naranja" onclick="operacion('-')" >-</div>
+                <div class="caja gris" onclick="operacion(1)">1</div>
+                <div class="caja gris" onclick="operacion(2)">2</div>
+                <div class="caja gris" onclick="operacion(3)">3</div>
+                <div class="caja naranja" onclick="operacion('+')">+</div>
+                <div class="caja gris doble" onclick="operacion(0)">0</div>
+                <div class="caja gris" onclick="operacion(',')">,</div>
+                <div class="caja naranja" onclick="operacion('=')" >=</div>
+            </div>
+</div>
+
+</body>
+<script src="js/js.js"></script>
+</html>

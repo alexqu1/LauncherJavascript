@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POMODORO</title>
+    <link rel="icon" type="image/x-icon" href="temporizador.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<script src="js/script.js"></script>
+
+<body>
+    <header id="header">
+        <div class="titulo animate__animated animate__bouncep ">
+            <h1 id="titulo">POMODORO</h1>
+        </div>
+        <aside>
+            <button class="menu" id="menu1" style="background:#f87072;">Pomodoro</button>
+            <button class="menu" id="menu2">Short break</button>
+            <button class="menu" id="menu3">Long break</button>
+        </aside>
+    </header>
+    <div class="contenedor">
+        <div class="circulo" id="circulo">
+            <div class="preloader" id="preloader">
+            </div>
+            <div id="numero">
+
+                <span id="minutes">00</span> : <span id="seconds">00</span>
+            </div>
+            <button class="botonesCrono" id="start" onclick="interval()">START</button>
+            <button class="botonesCrono" style="font-size:0px;" id="parar" onclick="pause(1)">PAUSE</button>
+            <button class="botonesCrono" style="font-size:0px;" id="parar2" onclick="pause(2)">PAUSE</button>
+            <button class="botonesCrono" style="font-size:0px;" id="parar3" onclick="pause(3)">PAUSE</button>
+            <button class="botonesCrono" style="font-size:0px;" id="reiniciar" onclick="continuar(1)">CONTINUAR</button>
+            <button class="botonesCrono" style="font-size:0px;" id="reiniciar2" onclick="continuar(2)">CONTINUAR</button>
+            <button class="botonesCrono" style="font-size:0px;" id="reiniciar3" onclick="continuar(3)">CONTINUAR</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="javascript:abrirModal()">
+            <img src="imagenes/engranaje.png">
+        </a>
+
+    </footer>
+
+
+    <div id="myModal" class="modal animate__animated animate__fadeInDown">
+        <div class="modal-contenedor">
+            <div class="arriba">
+                <p>Settings</p>
+                <span class="close" onclick="cerrarModal()">&times;</span></div>
+            <div id="inputContador">
+                <p style="font-weight: bold; margin-bottom: 1em;margin-left: 1em">TIME (MINUTES)</p>
+                <p>
+                    <label class="labelText1">pomodoro</label>
+                    <label class="labelText2">short break</label>
+                    <label class="labelText3">long break</label></p>
+
+                <input type="number" id="mim" placeholder="mim" class="inputNumeros" value="0">
+                <input type="number" id="sBreak" class="inputNumeros" value="0">
+                <input type="number" id="lBreak" class="inputNumeros" value="0">
+
+            </div>
+
+            <div class="elegirLetra">
+
+                <div class="botones">
+                    <label class="labelText1">Long Break Interval</label>
+                    <input type="number" id="LInterval" placeholder="mim" class="inputNumeros" value="1">
+                    <!--            <button class="botonfons" >Aa</button>-->
+                    <!--            <button class="botonfons" style="font-weight: bold">Aa</button>-->
+                    <!--            <button class="botonfons" style="font-style:italic">Aa</button>-->
+                    <!--            </div>-->
+                </div>
+
+
+                <div class="elegirColor">
+                    <div>
+                        Color
+                    </div>
+                    <div class="botones">
+                        <button class="botonColor" style="background:#f87072" onclick="cambiarcolor(1)"></button>
+                        <button class="botonColor" style="background:deepskyblue" onclick="cambiarcolor(2)"></button>
+                        <button class="botonColor" style="background:blueviolet" onclick="cambiarcolor(3)"></button>
+                    </div>
+                </div>
+
+                <button class="aplicar" onclick="cerrarModal()">APLICAR</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+*{margin: 0px; padding: 0px;}
+
+
+.calculadora{
+    margin-left: 40%;
+    margin-top:5%;
+    width: 170px;
+    border: 1px solid black;
+}
+
+.numeros{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+input{
+    width: 160px;
+    font-size: 20px;
+}
+
+.caja{
+    height: 2.5em;
+    width: 2.5em;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.naranja{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.gris{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+.negro{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.doble{
+    width: 5.1em;
+}

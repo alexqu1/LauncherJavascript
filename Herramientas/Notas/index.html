@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="css/style.css">
+	 <link rel="icon" type="image/x-icon" href="img/lapiz.png">
+</head>
+<body>
+    
+    <header>
+        <img src="img/lapiz.png" alt="" srcset="">
+        <img src="img/notas.png" alt="" srcset="">
+     
+        
+    </header>
+<div id="contenedor">
+    <!-- <div class="caja">
+                <div>
+                    <p id="titulo">NOta1</p>
+                    <p id="descripcion">Comprar Pan , verduras , ir al bar</p>
+                </div> 
+                <div>
+                <button class="Editar">Editar</button><button class="Eliminar" >Eliminar</button> 
+                </div>
+            </div>-->
+           
+    </div> 
+    <div>
+    <img  class="botonAñadir" onclick="AbrirModal()"    src="img/boton.png" alt="" srcset="">
+    </div>
+  
+            <div id="mymodal">
+                <div id="cajaModal">
+                    <span class="cerrar" onclick="CerrarModal()">X</span>
+                   
+                    <h2>Añadir nota</h2>
+     
+               
+                    <input type="text" id="inputTitulo" placeholder="TITULO" value="">
+               
+              
+                    <textarea name="" id="inputDescripcion" cols="30" rows="10" placeholder="DESCRIPCION" value=""></textarea>
+            
+                    <input type="Submit"  value="Guardar" id="botonGuardar" onclick="Guardar()" >
+
+                </div>
+            </div>
+
+
+             <div id="mymodaleditar">
+                <div id="cajaModaleditar">
+                    <span class="cerrar" onclick="CerrarModalEdit()">X</span>
+                   
+                    <h2>Editar nota</h2>
+     
+               
+                    <input type="text" id="inputTituloEdit" placeholder="TITULO" value="">
+               
+              
+                    <textarea name="" id="inputDescripcionEdit" cols="30" rows="10" placeholder="DESCRIPCION" value=""></textarea>
+            
+                    <input type="Submit"  value="Guardar" id="botonGuardar" onclick="GuardarEditar()" >
+
+                </div> 
+            </div> 
+
+
+           
+</div>
+</body>
+<script src="js/js.js"></script>
+</html>
